@@ -66,7 +66,7 @@ namespace Image_Slider_Puzzle_Game_WIn_Forms_MOO_ICT
         private void OnPicClick(object? sender, EventArgs e)
         {
             PictureBox pictureBox = (PictureBox)sender;
-            PictureBox emptyBox = pictureboxlist.Find(x => x.Tag == "0");
+            PictureBox emptyBox = pictureboxlist.Find(x => x.Tag.ToString() == "0");
 
             Point pic1 = new Point(pictureBox.Location.X, pictureBox.Location.Y);
             Point pic2 = new Point(emptyBox.Location.X, emptyBox.Location.Y);
